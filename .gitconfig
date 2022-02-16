@@ -1,0 +1,16 @@
+[user]
+	email = email@mail.com
+	name = JohnDoe
+[http]
+	cookiefile = /directory/to/.gitcookies
+[alias]
+	ll = log --graph --oneline --decorate
+	amen = !git add . && git commit --amend --no-edit && git push -f
+	override = 'git fetch origin && git reset --hard origin/master && git clean -df
+	st = status -sb
+	last = log -1 HEAD --stat
+	cm = commit -m
+	d = diff
+	dv = difftool -t vimdiff -y
+	gl = config --global -l
+
